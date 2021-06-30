@@ -1,0 +1,44 @@
+.chart-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chart-bar__inner {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #1f1e1e;
+    border-radius: 12px;
+    background-color: #c3e4ee;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .chart-bar__fill {
+    background-color: #159acf;
+    width: 100%;
+    transition: all 0.3s ease-out;
+  }
+  
+  .chart-bar__label {
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  @media(max-width: 400px)
+  {
+    .chart-bar__label{
+    font-size: 0.5rem;
+    }
+  }
+
+  @media(max-width: 280px)
+  {
+    .chart-bar__label{
+      font-size: 0.3rem;
+    }
+  }
